@@ -124,7 +124,7 @@ select * from KRSMahasiswa;
 select Mahasiswa.nim, Mahasiswa.nama, Mahasiswa.jenis_kelamin, Dosen.nama as "Dosen PA"
 from Mahasiswa inner join Dosen on Dosen.kd_ds = Mahasiswa.kd_ds;
 ```
-![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.1png)
+![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.1.png)
 
 
  • script (LEFT JOIN)
@@ -132,7 +132,7 @@ from Mahasiswa inner join Dosen on Dosen.kd_ds = Mahasiswa.kd_ds;
 select Mahasiswa.nim, Mahasiswa.nama, Mahasiswa.jenis_kelamin, Dosen.nama as "Dosen PA"
 from Mahasiswa left join Dosen on Dosen.kd_ds = Mahasiswa.kd_ds;
 ```
-![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.2png)
+![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.2.png)
 
 
 2. Lakukan join tabel Matakuliah dan Dosen
@@ -143,7 +143,7 @@ from JadwalMengajar
 left join Matakuliah on JadwalMengajar.kd_mk = Matakuliah.kd_mk
 left join Dosen on JadwalMengajar.kd_ds = Dosen.kd_ds;
 ```
-![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.3png)
+![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.3.png)
 
 
 3. Lakukan join table JadwalMengajar, Dosen, dan Matakuluan
@@ -154,7 +154,7 @@ from JadwalMengajar
 left join Matakuliah on JadwalMengajar.kd_mk = Matakuliah.kd_mk
 left join Dosen on JadwalMengajar.kd_ds = Dosen.kd_ds;
 ```
-![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.4png)
+![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.4.png)
 
 
 4. Lakukan join tabel KrsMahasiswa, Mahasiswa, Matakuliah, dan Dosen
@@ -166,4 +166,4 @@ join Mahasiswa on KRSMahasiswa.nim = Mahasiswa.nim
 join Matakuliah on KRSMahasiswa.kd_mk = Matakuliah.kd_mk
 join Dosen on KRSMahasiswa.kd_ds = Dosen.kd_ds;
 ```
-![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.5png)
+![image](https://github.com/ZahraNurhaliza/Praktikum-5/blob/main/screenshot/Latihan.5.png)
